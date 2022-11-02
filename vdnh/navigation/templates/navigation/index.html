@@ -1,0 +1,97 @@
+{% extends 'navigation/base.html' %}
+{% block content %}
+<div class="forms">
+    <div class="simple_form form">
+        <div class="form__header">
+            Простой поиск
+        </div>
+        <form action="">
+            <p>
+                <label class="label">Выберите дату посещения</label>
+                <input class="input_date" type="date">
+            </p>
+            <p>
+                <label class="label">Количество взрослых</label>
+                <input type="number">
+            </p>
+            <p>
+                <label class="label">Количество подростков</label>
+                <input type="number">
+            </p>
+            <p>
+                <label class="label">Количество детей</label>
+                <input type="number">
+            </p>
+            <p>
+                <label class="label">Время прибытия</label>
+                <input type="time">
+            </p>
+            <p>
+                <label class="label">Время убытия</label>
+                <input type="time">
+            </p>
+            <p>
+                <label class="label">Что хотели бы посетить?</label>
+                <p><input type="checkbox">Мастерская</p>
+                <p><input type="checkbox">Что-нибудь покушать</p>
+                <p><input type="checkbox">Музей</p>
+                <p><input type="checkbox">Читальный зал</p>
+                <p><input type="checkbox">Пруд</p>
+                <p><input type="checkbox">Спортиваня площадка</p>
+                <p><input type="checkbox">Храм</p>
+                <p><input type="checkbox">Павильоны:</p>
+                <p><input type="checkbox">Павильон 1</p>
+                <p><input type="checkbox">Павильон 2</p>
+                <p><input type="checkbox">Павильон 3</p>
+            </p>
+        </form>
+
+    </div>
+    <div class="extended_form form">
+        <div class="form__header">
+            Расширенный поиск
+        </div>
+        <form action="">
+            <p>
+                <label class="label">Выберите дату посещения</label>
+                <input class="input_date" type="date">
+            </p>
+            <p>
+                <label class="label">Количество взрослых</label>
+                <input type="number">
+            </p>
+            <p>
+                <label class="label">Количество подростков</label>
+                <input type="number">
+            </p>
+            <p>
+                <label class="label">Количество детей</label>
+                <input type="number">
+            </p>
+            <p>
+                <label class="label">Время прибытия</label>
+                <input type="time">
+            </p>
+            <p>
+                <label class="label">Время убытия</label>
+                <input type="time">
+            </p>
+            <p>
+                <label class="label">Что хотели бы посетить?</label>
+                <!-- Мастерская, что-нибудь покуштать, музей, читальный зал, пруд, спортивная площадка, храм, павильоны (...) -->
+                <p><input type="checkbox">Мастерская</p>
+                <p><input type="checkbox">Что-нибудь покушать</p>
+                <p><input type="checkbox">Музей</p>
+                <p><input type="checkbox">Читальный зал</p>
+                <p><input type="checkbox">Пруд</p>
+                <p><input type="checkbox">Спортиваня площадка</p>
+                <p><input type="checkbox">Храм</p>
+                <p><input type="checkbox">Павильоны:</p>
+                <p><input type="checkbox">Павильон 1</p>
+                <p><input type="checkbox">Павильон 2</p>
+                <p><input type="checkbox">Павильон 3</p>
+            </p>
+        </form>
+    </div>
+</div>
+{% endblock %}
