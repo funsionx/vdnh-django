@@ -1,5 +1,6 @@
 from django.http import HttpResponseNotFound
 from django.shortcuts import render
+from .forms import *
 
 menu = [{'title': 'Главная', 'url_name': 'home'},
         {'title': 'Карта', 'url_name': 'vdnh_map'},
@@ -8,9 +9,18 @@ menu = [{'title': 'Главная', 'url_name': 'home'},
         ]
 
 def index(request):
+    form = myForm()
+    if request.method == 'POST':
+        form = myForm(request.POST)
+        if form.is_valid():
+            print(form.json_cleaned_data())
+        else:
+            form = myForm()
+            print('GGWP')
     context = {
         'menu': menu,
-        'title': 'Пострение маршрута'
+        'title': 'Пострение маршрута',
+        'form': form,
     }
     template = 'navigation/index.html'
     return render(request, template, context=context)

@@ -45,7 +45,6 @@
                 <p><input type="checkbox">Павильон 3</p>
             </p>
         </form>
-
     </div>
     <div class="extended_form form">
         <div class="form__header">
@@ -94,4 +93,9 @@
         </form>
     </div>
 </div>
+<form action="{% url 'home' %}" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">submit</button>
+</form>
 {% endblock %}
