@@ -1,0 +1,171 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  // gradient ----------------------------------------------------------
+  background: #BDF6D9;
+  background: -webkit-radial-gradient(top right, #BDF6D9, #42D2ED);
+  background: -moz-radial-gradient(top right, #BDF6D9, #42D2ED);
+  background: radial-gradient(to bottom left, #BDF6D9, #42D2ED);
+  // gradient ----------------------------------------------------------
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//-------------------------------------------------------
+
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-basis: 100%;
+  
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  
+  background: #D5FFC7;
+  border-radius: 50px;
+  flex-direction: column;
+}
+
+//-------------------------------------------------------
+
+.heroTitle {
+  height: 50vh;
+  
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #0D7973;
+
+  
+  h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 70px;
+    font-weight: 300;    
+        
+  };
+    span {
+      font-size: 90px;
+      font-weight: 700;
+    };
+    
+}
+
+//-------------------------------------------------------
+
+.heroMiddle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  border: 1px solid;
+  width: 25%;
+  height: 1px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+  
+.button18 {
+  align-items: center;
+  // gradient ----------------------------------------------------------
+  background: #408567;
+  background: -webkit-linear-gradient(right, #408567, #D9D9D9);
+  background: -moz-linear-gradient(right, #408567, #D9D9D9);
+  background: linear-gradient(to left, #408567, #D9D9D9);
+  // gradient ----------------------------------------------------------
+  border: 0;
+  border-radius: 100px;
+  color: #092B10;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: 'Montserrat Alternates' , sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  justify-content: center;
+  max-width: 480px;
+  min-height: 100px;
+  min-width: 400px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button18:hover,
+.button18:focus { 
+  background-color: #D9D9D9;
+  color: #092B10;
+}
+
+.button18:active {
+  background: #D9D9D9;
+  color: rgb(255, 255, 255, .7);
+}
+
+.button18:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+.govno {
+  /* Created with https://www.css-gradient.com */
+background: #3C3EF5;
+background: -webkit-radial-gradient(center, #3C3EF5, #22CC1F);
+background: -moz-radial-gradient(center, #3C3EF5, #22CC1F);
+background: radial-gradient(ellipse at center, #3C3EF5, #22CC1F);
+}
+
+@media (max-width: 1450px) {
+  .heroTitle {
+    h1 {
+      font-size: 60px;
+    }
+    span {
+    font-size: 80px;
+    }
+  }
+}
+  
+@media (max-width: 1250px) {
+  .heroTitle {
+    h1 {
+      font-size: 50px;
+    }
+    span {
+    font-size: 70px;
+    }
+  }
+
+  .button18 {
+    min-width: 250px;
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 680px) {
+  .heroTitle {
+    h1 {
+      font-size: 30px;
+    }
+    span {
+    font-size: 45px;
+    }
+  }
+
+  .button18 {
+    min-width: 150px;
+    font-size: 25px;
+    min-height: 70px;
+  }
+}
